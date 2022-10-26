@@ -49,7 +49,20 @@ namespace Travel.Controllers
         }
 
 
+        public async Task<IActionResult> IndexWithDatePicker()
+        {
+            List<Country>? countries = new List<Country>();
+            var travelWithDatePickerVM = new TravelDatePickerVM();
+            travelWithDatePickerVM.CountryList = await GetCountriesAsync();
 
+            return View(travelWithDatePickerVM);
+        }
+        [HttpPost]
+        public async Task<IActionResult> IndexWithDatePicker(TravelDatePickerVM travelDatePickerVM)
+        {
+            travelDatePickerVM.CountryList = await GetCountriesAsync();
+            return View(travelDatePickerVM);
+        }
     }
 }
 

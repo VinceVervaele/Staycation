@@ -97,33 +97,7 @@
                 })
             });
 
-            $(function () {
-                $("#StartDate").datepicker({
-                    numberOfMonths: 3,
-                    showButtonPanel: true
-                });
-            });
-
-            $(document).ready(function () {
-               $("#StartDate").datepicker({
-                    numberOfMonths: 3,
-                    beforeShowDay: $.datepicker.noWeekends,
-                    minDate: new Date(),
-                    dateFormat: "dd-mm-yy",
-
-                    onSelect: function (date) {
-                        var date2 = $('#StartDate').datepicker("getDate")
-                        $('#EndDate').datepicker('option', 'minDate', date2)
-                    }
-               });
-
-               $("#EndDate").datepicker({
-                   numberOfMonts: 3,
-                   beforeShowDay: $.datepicker.noWeekends,
-                   minDate: new Date(),
-                   dateFormat: 'dd-mm-yy'
-               });
-            });
+          
         </script>
     } 
 </body>
