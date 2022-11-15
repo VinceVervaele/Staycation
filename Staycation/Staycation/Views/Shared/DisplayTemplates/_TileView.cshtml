@@ -1,0 +1,49 @@
+﻿@model Staycation.ViewModels.HotelVM
+
+@if (Model != null)
+{
+    <div class="col-lg-6">
+
+        <div>
+            <h5>
+                @Model.NaamHotel
+                @for (int i = 0; i < @Model.Stars; i++)
+                {
+                    <img src="~/Images/star.jpg" />
+                }
+            </h5>
+        </div>
+
+        <div>
+
+            <div class="center positie-relative">
+                <img class="positie-relative" src="~/Images/@Model.ImagePath" asp-append-version="true" />
+
+                <div class="block-image">
+                    <div class="block-score">
+                        <div class="score">
+                            @Model.Score
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center marges">
+                <div class="decoratie">
+                    <a class="decoratie">Foto's</a>
+                    <a class="decoratie">Bewaren</a>
+                    <a class="decoratie">Video</a>
+                </div>
+
+                <div>
+                    - @Model.Benefit
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+}

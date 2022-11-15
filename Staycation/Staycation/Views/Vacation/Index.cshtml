@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Staycation.ViewModels.HotelVM>
+
+
+<h1>List @ViewBag.Type</h1>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        @await Html.PartialAsync("DisplayTemplates/_TileView", item)
+
+    }
+</div>

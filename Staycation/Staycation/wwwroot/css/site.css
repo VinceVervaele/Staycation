@@ -1,0 +1,118 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.block-image {
+    background-image: url(/Images/transparency_black_50p.png);
+    background-repeat: repeat;
+    padding-right: 55px;
+    bottom: 0px;
+    color: #ffffff;
+    min-height: 53px;
+    line-height: 18px;
+    padding-top: 7px;
+    position: absolute;
+}
+
+.block-score {
+    text-align: right;
+    width: 100%;
+}
+
+.score {
+    position: absolute;
+    right: 5px;
+    border-radius: 22px;
+    background-color: #092a5e;
+    color: #ffffff;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    border: 3px solid #ffffff;
+    line-height: 34px;
+    margin-left: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    bottom: 4px;
+}
+
+
+/*zelf geschreven css*/
+
+/*header*/
+header{
+    margin-bottom: 15px;
+}
+
+.nav{
+    width: 75%;
+    margin: 0 auto;
+}
+.nav .links{
+    text-decoration: none;
+    font-size: 13px;
+    color: grey;
+    padding: 25px;
+}
+.nav a{
+    margin-top: 60px;
+}
+
+    .nav .title {
+        font-size: 48px;
+        margin-left: 15px;
+        text-decoration: none;
+        color: black;
+    }
+
+/*footer*/
+#footerdiv {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#footerdiv a {
+    color: #70cbf4;
+}
+/* andere */
+.positie-relative {
+    position: relative;
+}
+
+.center {
+    float: left;
+
+}
+.marges{
+    margin-left: 25px;
+}
+
+.decoratie {
+    color: white;
+    background-color: grey;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+    .decoratie:hover {
+        color: black;
+    }m
